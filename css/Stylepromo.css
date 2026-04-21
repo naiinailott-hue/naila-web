@@ -1,0 +1,236 @@
+body {
+    font-family: cursive, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.main-bg {
+    background-color: rgb#9CAB84;
+}
+
+.main-color {
+    color: rgb#9CAB84;
+    background-color: rgb#9CAB84; 
+}
+
+.main-color {
+    background-color: #B8DB80;
+}
+
+
+/* banner */
+
+.banner {
+    height: 80vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/japanese-restaurant-nusa-dua-bali.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+/* promo */
+
+.hovered-card {
+    transition: .3s;
+}
+
+.hovered-card:hover {
+    transform: scale(1.1);
+}
+
+.card-promo {
+    transition: .3s;
+    margin-bottom: 20px;
+}
+
+.card-promo:hover {
+    transform: scale(1.1);
+}
+
+/* pelayanan */
+
+.pelayanan {
+    background-color: #89986D;
+}
+
+.pelayanan-content {
+    transition: .3s;
+}
+
+.pelayanan-content:hover {
+    transform: scale(1.1);
+}
+
+.pelayanan .icon-circle {
+    width: 90px;
+    height: 90px;
+    border: solid 2px;
+}
+
+/* menu favorit */
+
+.menu-favorit {
+    background-color: rgba#9CAB84;
+}
+
+.menu-favorit-content {
+    transition: .3s;
+}
+
+.menu-favorit-content:hover {
+    transform: scale(1.1);
+}
+
+
+/* testimony */
+.testimony {
+    background-color: #b08968 !important;
+}
+
+.testimony-card {
+    background: rgba(255, 255, 255, 0.07) !important;
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    border-radius: 16px;
+    padding: 28px;
+    transition: .3s;
+    height: 100%;
+}
+
+.testimony-card:hover {
+    transform: translateY(-6px);
+    background: rgba(255, 255, 255, 0.13);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.testimony-card .quote-icon {
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.3);
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.testimony-card h5 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 4px;
+}
+
+.testimony-card .author {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.55);
+    margin-bottom: 12px;
+}
+
+.testimony-card p {
+    font-size: 0.88rem;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.testimony-card .stars {
+    color: #FFC107;
+    font-size: 0.85rem;
+    margin-bottom: 12px;
+}
+
+/* subscribe */
+
+.subscribe-content {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* produk banner */
+.produk-banner {
+    height: 50vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../image/banner.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+.footer {
+    background-color: #595959;
+}
+
+.footer .social-icon {
+    font-size: 1.6rem;
+    color: #fff;
+    transition: .3s;
+}
+
+.footer .social-icon:hover {
+    color: #FFC107;
+}
+
+/* Animasi section */
+.promo-section {
+    animation: fadeSlideIn 0.4s ease both;
+}
+
+@keyframes fadeSlideIn {
+    from {
+    opacity: 0;
+    transform: translateY(20px);
+    }
+    to {
+    opacity: 1;
+    transform: translateY(0);
+    }
+}
+
+/* Animasi card */
+.promo-section .hovered-card {
+    opacity: 0;
+    animation: fadeSlideIn 0.4s ease forwards;
+}
+
+/* Delay tiap card */
+.promo-section .hovered-card:nth-child(1) {
+    animation-delay: 0.05s;
+}
+
+.promo-section .hovered-card:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.promo-section .hovered-card:nth-child(3) {
+    animation-delay: 0.15s;
+}
+
+.promo-section .hovered-card:nth-child(4) {
+    animation-delay: 0.2s;
+}
+
+.promo-section .hovered-card:nth-child(5) {
+    animation-delay: 0.25s;
+}
+
+.promo-section .hovered-card:nth-child(6) {
+    animation-delay: 0.3s;
+}
+
+.promo-section .hovered-card:nth-child(7) {
+    animation-delay: 0.35s;
+}
+
+.promo-section .hovered-card:nth-child(8) {
+    animation-delay: 0.4s;
+}
+
+/* Animasi tombol filter */
+.filter-btn {
+    transition: 
+    background-color 0.25s ease, 
+    color 0.25s ease, 
+    transform 0.15s ease, 
+    box-shadow 0.25s ease;
+}
+
+/* Saat ditekan */
+.filter-btn:active {
+    transform: scale(0.95);
+}
+
+/* Saat aktif */
+.filter-btn.active {
+    box-shadow: 0 4px 14px rgba(255, 193, 7, 0.45);
+}
